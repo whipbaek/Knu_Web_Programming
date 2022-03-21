@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="frame" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submint" value="Submit">
+    </form>
+
+    <br>
+
+    <h2>GET 방식으로 데이터 전송</h2>
+    <form action="01.getdata.jsp" method="get">
+        <p>이름 : <input type="text" name="name"></p>
+        <p>전공 : <input type="text" name="major"></p>
+        <p></p>
+        <input type="submit" value="전송">
+        <input type="reset" value="다시작성">
+    </form>
+
+    <br><br>
+
+    <h2>회원 인증 입력 양식</h2>
+    <form>
+        <p>ID : <input type="text" name="ID" size="15" placeholder="아이디 입력칸" required></p>
+        <p>PW : <input type="password" name="psw" size="15" placeholder="비밀번호" required</p>
+        <p></p>
+        <input type="submit" value="전송">
+        <input type="reset" value="다시작성">
+    </form>
+
+    <br><br>
+
+    <h2>텍스트 공간 입력 양식</h2>
+    <form>
+        <textarea rows="5" cols="50">텍스트를 작성하는 공간입니다</textarea>
+        <p></p>
+        <input type="submit" value="전송">
+        <input type="reset" value="다시작성">
+    </form>
+
+    <br><br>
+
+    <form>
+        <fieldset>
+            <legend>개인 정보 입력</legend>
+            <p>이름 : <input type="text" name="name"></p>
+            <p>학교 : <input type="text" name="school"></p>
+            <input type="submit" value="제출">
+            <input type="reset" value="다시작성">
+        </fieldset>
+    </form>
+
+
+    <br><br>
+
+
+    <form>
+        <h3>당신은 몇 학년입니까?</h3>
+        <input type="radio" name="year" value="1" checked>1학년
+        <input type="radio" name="year" value="2">2학년
+        <input type="radio" name="year" value="3">3학년
+        <input type="radio" name="year" value="4">4학년
+        <p></p>
+        <input type="submit" value="제출">
+        <input type="reset" value="다시작성">
+    </form>
+
+    <br><br>
+
+    <form>
+        <h3>Button 태그 사용</h3>
+        <button type="button" onclick="alert('클릭-1 사용')">클릭-1</button>
+        <h3>Input 태그 사용</h3>
+        <input type="button" onclick="alert('클릭-2 사용')" value="클릭-2">
+        <h3>Image 버튼 사용</h3>
+        <button type="button" onclick="alert('클릭-3 사용')"><img src="버튼1.jpg" width="200px"; height="150px";></button>
+    </form>
+
+
+    <br><br>
+
+    <form>
+        <h3>오늘 날짜 입력</h3>
+        Today : <input type="date" name="today">
+        <h3>프로젝트 수행 기간</h3>
+        From : <input type="date" name="from" min="2016-03-01" max="2016-12-31">
+        To : <input type="date" name="to" min="2022-01-01" max="2022-12-31">
+        <p></p>
+        <input type="submit" value="제출">
+        <input type="reset" value="다시작성">
+    </form>
+
+
+    <br><br>
+
+    <form>
+        <h3>원하는 색상을 선택하세요.</h3>
+        <input type="color" name="color_value" value="#000ff">
+        <p></p>
+        <input type="submit" value="선택완료">
+        <input type="reset" value="다시선택">
+    </form>
+
+    <br><br>
+    <form>
+        <h3>0~100 범위에서 원하는 지점을 선택하세요.</h3>
+        <input type="range" name="point" min="0" max="100">
+        <p></p>
+        <input type="submit" value="완료">
+        <input type="reset" value="초기화">
+    </form>
+
+    <br><br>
+    <form>
+        <h3>이메일을 정확하게 입력하세요</h3>
+        <input type="email" name="myemail">
+        <p></p>
+        <input type="submit" value="제출">
+        <input type="reset" value="다시작성">
+    </form>
+
+    <br><br>
+    <form>
+        <h3>검색어를 입력하세요</h3>
+        구글 검색 : <input type="search" name="googlesearch">
+        <p></p>
+        <input type="submit" value="제출">
+        <input type="reset" value="다시작성">
+    </form>
+
+    <br><br>
+    <h3>div/span 공간 분할 조합</h3>
+<div style="height: 70px; background-color: #FFFF00;">머리말 영역</div>
+
+<h3>iframe 공간 분할 예제</h3>
+<div style="background-color: #FFFF00;">
+<span>
+    <a href="intro.html" target="if_a">인사말</a> |
+    </span>
+    <span>
+        <a href="iecture.html" target="if_a">강좌 소개</a> |
+        </span>
+        <span>
+            <a href="http://cafe.naver.com/go2web" target="if_b">저자 홈페이지</a> 
+            </span>
+</div>
+<p/>
+<iframe src="basic.html" width="400" height="200" name="if_a" frameborder="0"></iframe>
+<iframe src="basic.html" width="400" height="200" name="if_b" scrolling="no"></iframe>
+<div style="background-color: #FFFF00;">한빛아카데미(주)</div>
+</body>
+
+
+</html>
