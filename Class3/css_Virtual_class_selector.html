@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:visited{
+            border: 1px dashed red; width: 400px; padding:5px;
+        }
+
+        a:hover{ text-decoration: overline;}
+        a:active{background-color: yellow;}
+
+        div.d1:hover {
+            background-color: tomato;
+        }
+
+
+        div{color : white;}
+        h2:first-letter{font-size:30px;color:red; text-transform: uppercase;}
+        h3:first-line{color:blue;}
+        input:focus{background-color: red;}
+        input:checked+div.d1{background-color: gray;}
+        input:checked+div.d2{background-color: black;}
+    
+    </style>
+</head>
+
+<body>
+    <p><a href="http://www.w3.org" target="_blink">W3C 방문:</a>
+    마우스 이벤트에 따른 링크의 변화를 잘 보세요.
+    </p>
+
+    <div class="d1">
+        <h3>가상 클래스 1 영역</h3>
+        마우스 위치에 따른 박스의 스타일 변화르 보세요.
+    </div>
+    <br><br><br>
+    
+    <h2>states pseudo-classes</h2>
+    <h3>문제) 대한민국수도는?</h3>
+    <p>정답 작성 : <input type="text"></p>
+    <h2>answer</h2>
+    힌트 보기 : <input type="checkbox">
+    <div class="d1">
+        남대문이 있는 곳이죠.
+    </div>
+    정답 보기 : <input type="checkbox">
+    <div class="d2"> 서울</div>
+</body>
+
+</html>
