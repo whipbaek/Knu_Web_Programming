@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        islogin = false;
+        while (true) {
+            id = prompt('아이디 입력');
+            if (id == 'admin1') {
+                password = prompt('비밀번호 입력');
+                if (password === '123') {
+                    location.href = "20_login.html"
+                    islogin = true;
+                }
+                else {
+                    continue;
+                }
+            }
+            else if (id == 'admin2') {
+                password = prompt('비밀번호 입력');
+                if (password === '1234') {
+                    location.href = "20_login.html"
+                    islogin = true;
+                }
+                else {
+                    continue;
+                }
+            }
+
+            else if (id == 'admin3') {
+                password = prompt('비밀번호 입력');
+                if (password === '12345') {
+                    location.href = "20_login.html"
+                    islogin = true;
+                }
+                else {
+                    continue;
+                }
+            }
+
+            else {
+                continue;
+            }
+            if (login) braek;
+        }
+
+    </script>
+</body>
+
+</html>
