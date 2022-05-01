@@ -1,12 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Board</title>
+    <link rel="stylesheet" href="mycss.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
 </head>
+
+
 <body>
-    <h1>Board입니다.</h1>
+    <br>
+    <br>
+    <h1 style="text-align: center;">🧗‍♂️</h1>
+    <a href="index.html" style="text-decoration: none;">
+        <h1>
+            <strong>
+            <div style="text-align: center;font-style: italic;">
+                Challengers
+            </div>
+            </strong>
+        </h1>
+    </a>
+    </h1>
+
+    <ul>
+        <a href="Notice.html">
+            <li class="l_left">Notice</li>
+        </a>
+        <a href="Board.html">
+            <li class="l_left">Borad</li>
+        </a>
+        <a href="Contact.html">
+            <li class="r_right">Contact</li>
+        </a>
+        <a href="About.html">
+            <li class="r_right">About</li>
+        </a>
+    </ul>
+
+    <br><br>
+    <hr>
+    <br>
+
+    <h2 style="padding-left: 10px;">  게시판</h2><br/>
+    
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>날짜</th>
+                <th>조회수</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>001</td>
+                <td>와 첫글!</td>
+                <td>player</td>
+                <td>2022.04.22</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>2022년 웹프로그래밍</td>
+                <td>김아무개</td>
+                <td>2022.04.25</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>클라이밍 배울곳이 있을까요?</td>
+                <td>꼬마돌</td>
+                <td>2022.04.30</td>
+                <td>0</td>
+            </tr>
+
+            <tr>
+                <td>004</td>
+                <td>북구 같이 클라이밍 하실분~</td>
+                <td>데구리</td>
+                <td>2022.04.30</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr/>
+    <nav aria-label="...">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Previous</a>
+          </li>
+          <li class="page-item active">
+            <a class="page-link" href="#">1 <span class="sr-only"></span></a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+      <div style="padding-right:20px;">
+        <button type="button" class="btn btn-primary float-end">글쓰기</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
+
 </html>
